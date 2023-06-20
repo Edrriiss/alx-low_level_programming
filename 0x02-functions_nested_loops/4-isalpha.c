@@ -1,25 +1,15 @@
-#include <stdio.h>
-#include <ctype.h>
-
+#include "holberton.h"
 /**
- * main - Entry point of the program
- *
- * Return: 0 on success
+ * _isalpha - tests whether a character is from the English alphabet.
+ * @c: character to be checked.
+ * Return: 1 if the character is an English character.
+ * 0 if the character is not an English character.
  */
-int main(void)
+int _isalpha(int c)
 {
-	char ch = 'A';
-
-	if (_islower(ch))
-		printf("%c is a lowercase character.\n", ch);
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+		return (1);
 	else
-		printf("%c is not a lowercase character.\n", ch);
+		return (0);
 
-	if (_isalpha(ch))
-		printf("%c is an alphabetic character.\n", ch);
-	else
-		printf("%c is not an alphabetic character.\n", ch);
-
-	return (0);
 }
-

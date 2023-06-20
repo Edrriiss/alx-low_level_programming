@@ -1,17 +1,17 @@
-#include <unistd.h>
-
+#include "holberton.h"
 /**
- * main - Entry point of the program
- *
- * Return: Always 0 (Success)
+ * main - prints the string "Holberton" from a character array.
+ * Return: 0 on success.
  */
 int main(void)
 {
-    char c[] = "_putchar\n";
+	char c[] = "Holberton";
+	int i;
 
-    /* Use the write system call to print the string */
-    write(1, c, sizeof(c) - 1);
-
-    return (0);
+	for (i = 0; i < 9; i++)
+	{
+		_putchar(c[i]);
+	}
+	_putchar('\n');
+	return (0);
 }
-

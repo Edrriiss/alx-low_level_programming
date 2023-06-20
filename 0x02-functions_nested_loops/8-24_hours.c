@@ -1,29 +1,22 @@
-#include <stdio.h>
-
+#include "holberton.h"
 /**
- * jack_bauer - Prints every minute of the day of Jack Bauer.
+ * jack_bauer - prints time table in this format: HH:MM
+ * Return: the sum of two numbers.
  */
 void jack_bauer(void)
 {
-    int hour, minute;
+	int h, m;
 
-    for (hour = 0; hour < 24; hour++)
-    {
-    for (minute = 0; minute < 60; minute++)
-    {
-    printf("%02d:%02d\n", hour, minute);
-    }
-    }
+	for (h = 0; h < 24; h++)
+	{
+		for (m = 0; m < 60; m++)
+		{
+			_putchar((h / 10) + '0');
+			_putchar((h % 10) + '0');
+			_putchar(':');
+			_putchar((m / 10) + '0');
+			_putchar((m % 10) + '0');
+			_putchar('\n');
+		}
+	}
 }
-
-/**
- * main - Entry point of the program.
- *
- * Return: 0 on success.
- */
-int main(void)
-{
-    jack_bauer();
-    return (0);
-}
-
