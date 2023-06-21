@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
  * jack_bauer - prints time table in this format: HH:MM
  * Return: the sum of two numbers.
