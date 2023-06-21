@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include <stdio.h>
 /**
  * _isalpha - tests whether a character is from the English alphabet.
  * @c: character to be checked.
